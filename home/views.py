@@ -349,7 +349,7 @@ def deleteestoque1peca(request, pk):
 
 def login(request):
     if request.method != 'POST':
-     return render(request, 'login.html ')
+       return render(request, 'login.html ')
 
     usuario = request.POST.get('usuario')
     senha = request.POST.get('senha')
